@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Star, ChevronDown } from 'lucide-react';
 import Reveal from './Reveal';
+import Image from 'next/image';
 import { BOOKING_URL, TEAM, STATS } from '@/data/studio';
 
 const peakImg =
@@ -88,7 +89,7 @@ const Hero: React.FC = () => {
           <Reveal delay={160}>
             <div className="relative">
               <div className="overflow-hidden rounded-3xl border border-orange-100 bg-white shadow-2xl shadow-orange-100">
-                <img src={peakImg} alt="Warm peak summit illustration" className="h-full w-full object-cover" />
+                <Image src={peakImg} alt="Warm peak summit illustration" width={1200} height={900} priority className="h-full w-full object-cover" />
               </div>
 
               {/* floating team card */}
