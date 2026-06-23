@@ -4,4 +4,4 @@
 :HL["https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178606019_9f197073.png","image"]
 :HL["https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178611466_b5277d65.png","image"]
 :HL["https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178600738_e1849b06.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"work","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"summit-saas","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"d4h6T_8RBlhaSOASYt5nt"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"work","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"summit-saas","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"zDObP9Dwdogau9lWv_OJa"}

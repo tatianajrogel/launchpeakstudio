@@ -53,8 +53,7 @@ const Reviews: React.FC = () => {
                   <GoogleG />
                 </div>
                 <blockquote className="mt-4 flex-1 text-[15px] leading-relaxed text-[#4a3c33]">
-                  "{r.text}"
-                </blockquote>
+                  &ldquo;{r.text}&rdquo;                </blockquote>
                 <figcaption className="mt-6 flex items-center gap-3 border-t border-orange-100 pt-5">
                   <img src={r.avatar} alt={r.name} className="h-11 w-11 rounded-full object-cover" />
                   <div>

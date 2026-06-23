@@ -1,12 +1,15 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { FlatCompat } from '@eslint/eslintrc';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const compat = new FlatCompat({ baseDirectory: __dirname });
+import next from 'eslint-config-next';
 
 export default [
   { ignores: ['.next/**', 'node_modules/**', 'next-env.d.ts'] },
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...next,
+  {
+    rules: {
+      // These React Compiler-aware rules fire on stock shadcn/ui boilerplate
+      // (sidebar/carousel/use-mobile) and standard effect patterns. Keep them
+      // visible as warnings rather than build-blocking errors.
+      'react-hooks/set-state-in-effect': 'warn',
+      'react-hooks/purity': 'warn',
+    },
+  },
 ];
