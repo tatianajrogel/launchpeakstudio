@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { ArrowRight, Check, Calendar, Mail, MapPin } from 'lucide-react';
 import Reveal from './Reveal';

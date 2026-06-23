@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 
 interface RevealProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
 }
 
 // Lightweight scroll-reveal using IntersectionObserver (respects reduced motion)

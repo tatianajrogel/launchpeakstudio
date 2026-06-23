@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { ArrowUpRight, TrendingUp } from 'lucide-react';
 import Reveal from './Reveal';
