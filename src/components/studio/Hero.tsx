@@ -94,7 +94,7 @@ const Hero: React.FC = () => {
 
               {/* floating team card */}
               <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-orange-100 bg-white/90 p-4 shadow-xl backdrop-blur sm:block">
-                <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-[#FF6B5A]">Meet the team</p>
+                <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-[#FF6B5A]">Meet your designer</p>
                 <div className="flex items-center gap-3">
                   {TEAM.slice(0, 3).map((m) => (
                     <div key={m.name} className="text-center">

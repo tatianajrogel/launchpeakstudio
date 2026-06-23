@@ -190,45 +190,6 @@ export const WORK: WorkItem[] = [
     },
   },
   {
-    slug: 'bloom-wellness',
-    title: 'Bloom Wellness',
-    client: 'Bloom',
-    category: 'Mobile',
-    blurb: 'A calm, warm wellness app with a design system for fast growth.',
-    result: '4.8 star rating',
-    image: IMG.mobile2,
-    industry: 'Health and wellness',
-    timeline: '12 weeks',
-    services: ['UI/UX Design', 'Mobile Development'],
-    challenge:
-      'Bloom wanted to grow fast but every new feature felt slow to ship and slightly off brand. They needed a system that kept everything calm and consistent as the team scaled.',
-    approach: [
-      'Audited the existing screens to find inconsistencies.',
-      'Built a flexible design system with warm, soothing tokens.',
-      'Designed core flows for habits, check ins, and reflection.',
-      'Set patterns so future features stay on brand by default.',
-    ],
-    designNote:
-      'Soft gradients, gentle motion, and generous spacing make the app feel like a deep breath.',
-    gallery: [IMG.mobile2, IMG.mobile4, IMG.mobile1],
-    build: [
-      'Component driven build with shared theming.',
-      'Offline friendly data layer for daily check ins.',
-      'Smooth, reduced motion aware animations.',
-      'Release pipeline tuned for frequent updates.',
-    ],
-    results: [
-      { value: '4.8', label: 'Average rating' },
-      { value: '3x', label: 'Faster feature ship' },
-      { value: '+52%', label: 'Daily check ins' },
-    ],
-    quote: {
-      text: 'The design system they built saved us months. Everything is warm, clean, and consistent. Best money we spent this year.',
-      name: 'David Cho',
-      role: 'Product Lead, Bloom',
-    },
-  },
-  {
     slug: 'harbor-commerce',
     title: 'Harbor Commerce',
     client: 'Harbor',
@@ -422,27 +383,6 @@ export const TEAM: TeamMember[] = [
     bio: 'UI/UX designer and web/mobile developer who loves taking founders from idea to launch.',
     avatar:
       'https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178539219_bf7b634a.jpg',
-  },
-  {
-    name: 'Maya Linden',
-    role: 'Product Designer',
-    bio: 'Turns research into clean, friendly interfaces that feel effortless to use.',
-    avatar:
-      'https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178539898_626f7ccb.jpg',
-  },
-  {
-    name: 'Ava Brooks',
-    role: 'Frontend Engineer',
-    bio: 'Builds fast, accessible interfaces with pixel-perfect care and motion.',
-    avatar:
-      'https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178540557_fe682bcc.jpg',
-  },
-  {
-    name: 'Nora Hayes',
-    role: 'Strategy + Growth',
-    bio: 'Connects design work to real business goals and measurable outcomes.',
-    avatar:
-      'https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178552545_815b7a63.png',
   },
 ];
 

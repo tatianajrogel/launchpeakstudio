@@ -22,8 +22,8 @@ const About: React.FC = () => {
           </h2>
           <p className="mt-5 text-[#5a4a40]">
             Launch Peak Studio started with a simple belief. Great products come from one team that
-            both designs and builds. {STUDIO.owner} leads the work, and a small, sharp crew brings
-            it to life.
+            both designs and builds. {STUDIO.owner} handles every project end to end, so you
+            get one dedicated partner from idea to launch.
           </p>
           <p className="mt-4 text-[#5a4a40]">
             We are friendly enough that a first time founder feels welcome, and polished enough that
