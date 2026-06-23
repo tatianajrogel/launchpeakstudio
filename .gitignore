@@ -35,3 +35,6 @@ next-env.d.ts
 
 # Env files
 .env*.local
+
+# GSD planning scratch (tool state, not source)
+/.planning/
