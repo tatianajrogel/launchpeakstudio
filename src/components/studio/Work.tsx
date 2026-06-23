@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 import { ArrowUpRight, TrendingUp } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import Reveal from './Reveal';
-import CaseStudy from './CaseStudy';
-import { WORK, WORK_FILTERS, WorkItem } from '@/data/studio';
+import { WORK, WORK_FILTERS } from '@/data/studio';
 
 const Work: React.FC = () => {
   const [filter, setFilter] = useState('All');
-  const [active, setActive] = useState<WorkItem | null>(null);
   const items = filter === 'All' ? WORK : WORK.filter((w) => w.category === filter);
 
   return (
@@ -45,14 +45,16 @@ const Work: React.FC = () => {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((w, i) => (
             <Reveal key={w.slug} delay={(i % 3) * 100}>
-              <button
-                onClick={() => setActive(w)}
+              <Link
+                href={`/work/${w.slug}`}
                 className="group block w-full overflow-hidden rounded-3xl border border-orange-100 bg-white text-left shadow-sm transition-all hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-orange-100"
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={w.image}
                     alt={w.title}
+                    width={640}
+                    height={224}
                     className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-[#FF6B5A] backdrop-blur">
@@ -73,13 +75,11 @@ const Work: React.FC = () => {
                     {w.result}
                   </div>
                 </div>
-              </button>
+              </Link>
             </Reveal>
           ))}
         </div>
       </div>
-
-      {active && <CaseStudy item={active} onClose={() => setActive(null)} />}
     </section>
   );
 };
