@@ -4,4 +4,4 @@
 :HL["https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178577508_72a52b48.jpg","image"]
 :HL["https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178581262_88892679.jpg","image"]
 :HL["https://d64gsuwffb70l.cloudfront.net/6a39e287708138786b561e2d_1782178580399_5f4b5d4e.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"work","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"bloom-wellness","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"YS1Kmk2wkmcgc_zCxZs-k"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"work","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"bloom-wellness","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"d4h6T_8RBlhaSOASYt5nt"}
