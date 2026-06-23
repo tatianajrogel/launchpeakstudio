@@ -1,7 +1,6 @@
 // Single source of truth for Launch Peak Studio content
 
-export const BOOKING_URL =
-  'https://famous.ai/api/crm/6a39e287708138786b561e2d/calendar/public?calendarId=2d34c9d6-a362-4470-9d61-5c2b71124214&view=booking';
+export const BOOKING_URL = 'https://cal.com/launchpeakstudio/30min';
 
 export const SUBSCRIBE_URL =
   'https://famous.ai/api/crm/6a39e287708138786b561e2d/subscribe';
