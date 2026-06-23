@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   creator: STUDIO.owner,
   publisher: STUDIO.name,
   alternates: { canonical: '/' },
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
   robots: {
     index: true,
     follow: true,
