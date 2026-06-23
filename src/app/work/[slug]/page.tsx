@@ -5,6 +5,8 @@ import { ArrowLeft } from 'lucide-react';
 import { WORK } from '@/data/studio';
 import CaseStudy from '@/components/studio/CaseStudy';
 
+const SITE_URL = 'https://launchpeakstudio.com';
+
 export function generateStaticParams() {
   return WORK.map((w) => ({ slug: w.slug }));
 }
@@ -22,6 +24,7 @@ export async function generateMetadata({
     description: item.blurb,
     alternates: { canonical: `/work/${item.slug}` },
     openGraph: {
+      type: 'article',
       title: `${item.title} — Case Study`,
       description: item.blurb,
       images: [item.image],
@@ -39,7 +42,7 @@ export default async function CaseStudyPage({
   const item = WORK.find((w) => w.slug === slug);
   if (!item) notFound();
 
-  const jsonLd = {
+  const creativeWorkJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
     name: item.title,
@@ -47,6 +50,17 @@ export default async function CaseStudyPage({
     description: item.blurb,
     image: item.image,
     about: item.industry,
+    url: `${SITE_URL}/work/${item.slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Work', item: `${SITE_URL}/#work` },
+      { '@type': 'ListItem', position: 3, name: item.title, item: `${SITE_URL}/work/${item.slug}` },
+    ],
   };
 
   return (
@@ -64,7 +78,11 @@ export default async function CaseStudyPage({
       </div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(creativeWorkJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
     </main>
   );
