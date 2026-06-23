@@ -6,6 +6,8 @@ export const BOOKING_URL =
 export const SUBSCRIBE_URL =
   'https://famous.ai/api/crm/6a39e287708138786b561e2d/subscribe';
 
+export const CALCOM_LINK = 'launchpeakstudio/30min';
+
 export const STUDIO = {
   name: 'Launch Peak Studio',
   tagline: 'From startup to summit.',
